@@ -1,4 +1,4 @@
-# Academic-MSCSE-NSU
+# NSU MScSE Academic Journey
 
 A comprehensive repository for my Master of Science in Computer Science & Engineering (MScSE) journey at North South University.
 
