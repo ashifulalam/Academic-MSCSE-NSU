@@ -52,7 +52,7 @@
 
 Decision options: `✅ Satisfied`, `🙂 Average`, `⚠️ Below Average`, `❌ Not Satisfied`, `🔁 Retake`, or `🗑️ Discard`.
 
-### First Semester Courses
+### First Semester
 
 | Course Name | Term | Decision | Letter Grade | Grade Point |
 | --- | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ Decision options: `✅ Satisfied`, `🙂 Average`, `⚠️ Below Average`, `❌ 
 | [CSE583.1 Digital Image Processing](./CSE583.1%20Digital%20Image%20Processing/) | Spring 2026 | `Pending` | `Pending` | `Pending` |
 | **Total CGPA** |  |  |  | `Pending` |
 
-### Second Semester Courses
+### Second Semester
 
 | Course Name | Term | Decision | Letter Grade | Grade Point |
 | --- | --- | --- | --- | --- |
