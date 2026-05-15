@@ -1,8 +1,25 @@
-# Rules for AI and Future Updates
+# AI Rules and Project Guide
 
-This file explains how this repository should be maintained.
+This file is the main instruction guide for any AI tool working in this repository.
 
-The goal is to make the structure, writing style, and workflow clear enough that any AI tool or future helper can work in this repository without needing the same instructions again.
+Read this file first before editing, reorganizing, committing, or suggesting changes.
+
+These rules apply to any AI helper, including Codex, Claude, Gemini, ChatGPT, or any other tool.
+
+The goal is to make the project clear enough that the user does not need to explain the same structure, naming style, commit style, or documentation rules again.
+
+## First Things an AI Must Do
+
+Before making changes, an AI should:
+
+- read this `RULES.md` file
+- check the current repository structure
+- check the files related to the user's request
+- preserve the existing organization unless the user asks for a change
+- make the smallest clear change that solves the request
+- explain important changes in simple language
+
+Do not assume this is a software project.
 
 ## Repository Purpose
 
@@ -19,7 +36,25 @@ It contains:
 - academic calendar files
 - qualifying exam resources
 
-This is not a software project in the usual sense. It is mainly a document archive that should stay clean, organized, and easy to browse.
+This is mainly a document archive that should stay clean, organized, and easy to browse.
+
+The repository should help the user:
+
+- find course materials quickly
+- track courses by semester
+- keep faculty and contact information organized
+- track CGPA planning and course outcomes
+- keep future semester additions consistent
+- maintain clean Git history with easy commit messages
+
+## Important Root Files
+
+These root files have special meaning:
+
+- `README.md` is the main public index of the repository
+- `CGPA.md` is for CGPA planning, grade targets, and semester course outcomes
+- `RULES.md` is the instruction file for AI tools and future updates
+- `.gitignore` keeps temporary files out of Git
 
 ## Current Top-Level Structure
 
@@ -30,7 +65,12 @@ Use the current top-level structure unless the user explicitly asks for a reorga
 - `CSE583.1 Digital Image Processing`
 - `Qualifying Exam`
 
-There is also a root `README.md` that acts as the main index for the repository.
+The current first-semester course folders are:
+
+- `CSE534.1 Software Quality Assurance`
+- `CSE583.1 Digital Image Processing`
+
+Future semester course folders may be added later. When that happens, update the related index and tracking files instead of changing the whole structure.
 
 ## General Principles
 
@@ -45,12 +85,23 @@ There is also a root `README.md` that acts as the main index for the repository.
 
 Place new files in the most relevant folder.
 
+Root-level files should be used only for repository-wide information.
+
+Use root-level files this way:
+
+- use `README.md` for the main course index
+- use `CGPA.md` for CGPA planning and course outcome tracking
+- use `RULES.md` for AI instructions and repository workflow rules
+- use `.gitignore` for ignored temporary files
+
 Top-level content should go into one of:
 
 - `Academic Calendar`
 - `CSE534.1 Software Quality Assurance`
 - `CSE583.1 Digital Image Processing`
 - `Qualifying Exam`
+
+Do not put course-specific books, slides, notes, papers, exams, or projects directly in the repository root.
 
 Inside course folders, use the most relevant subfolder such as:
 
@@ -63,6 +114,25 @@ Inside course folders, use the most relevant subfolder such as:
 - `Slides`
 
 If a new kind of material does not fit the existing structure, create a clearly named new subfolder only when necessary.
+
+## Future Course and Semester Rules
+
+The user is currently in the first semester. More courses and semesters will be added later.
+
+When a new course is added:
+
+- create or update the correct course folder
+- update the root `README.md` course index
+- update the correct semester table in `CGPA.md`
+- add a folder `README.md` only for main top-level course folders
+- keep the course naming style consistent with existing course folders
+
+When a new semester is added:
+
+- add a new semester section in `CGPA.md`
+- keep previous semester sections unchanged unless the user asks
+- do not reorganize old courses into new semester folders unless the user explicitly asks
+- keep the root `README.md` simple and easy to scan
 
 ## README Rules
 
@@ -78,11 +148,58 @@ The root `README.md` is the main entry point for the repository.
 It should:
 
 - have a clean title
-- have a short repository description
+- optionally have a short repository description if the user wants one
 - include the course index table
 - stay concise and easy to read
 
 If the root README is updated, keep the style simple and structured.
+
+## CGPA.md Rules
+
+The root `CGPA.md` file is for CGPA planning and academic progress tracking.
+
+It should:
+
+- keep the CGPA summary near the top
+- keep the grading policy inside `CGPA.md`, not the root `README.md`
+- keep `Course Outcome` as the main section for course result tracking
+- keep semester course tables under `Course Outcome`
+- use `Pending` until real grades are available
+- update `Letter Grade`, `Grade Point`, and `Decision` after results are published
+- calculate semester CGPA from the course grade points
+- keep the page simple enough to update every semester
+
+### Course Outcome Rules
+
+Use this structure inside `Course Outcome`:
+
+- `First Semester Courses`
+- `Second Semester Courses`
+- future semester sections when new semesters are added
+
+Each semester course table should include:
+
+- `Course Name`
+- `Term`
+- `Letter Grade`
+- `Grade Point`
+- `Decision`
+
+Use the same decision labels unless the user asks for a change:
+
+- `✅ Satisfied`
+- `🙂 Average`
+- `⚠️ Below Average`
+- `❌ Not Satisfied`
+- `🔁 Retake`
+- `🗑️ Discard`
+
+When a new course is added, update both:
+
+- root `README.md` course index
+- the correct semester table in `CGPA.md`
+
+When a new semester starts, add a new semester section in `CGPA.md` only when the user asks or when course details are available.
 
 ### Top-Level Folder README Rules
 
@@ -209,6 +326,44 @@ Bad examples:
 - `worked on several updates`
 - `made some changes to keep things better`
 
+### Commit Message Template
+
+Use this exact shape for commit messages:
+
+```text
+Commit title
+
+- explain one clear change
+- explain another clear change
+- mention only what this commit includes
+```
+
+Example:
+
+```text
+Update CGPA tracking rules
+
+- add rules for CGPA semester tables
+- define course outcome decision labels
+- explain when to update CGPA.md
+```
+
+### Recommended Commit Titles by Change Type
+
+Use these examples as a guide when choosing commit titles:
+
+- `Add CGPA planning page`
+- `Add README for CSE534 course folder`
+- `Add CSE534 lecture slides`
+- `Add books for CSE583`
+- `Update main README course index`
+- `Update CGPA course outcomes`
+- `Update AI workflow rules`
+- `Update course README details`
+- `Rename contributing guide to rules`
+- `Remove unused README section`
+- `Clean temporary files`
+
 ### Commit Scope Rules
 
 - Prefer one commit for one main topic
@@ -251,6 +406,15 @@ Update the root `README.md` when:
 - the title changes
 - the repository description changes
 
+Update `CGPA.md` when:
+
+- a new course is added
+- a new semester starts
+- grades are published
+- grade points change
+- course decisions change
+- CGPA summary changes
+
 Update a folder `README.md` when:
 
 - a new important subfolder is added
@@ -274,6 +438,7 @@ Keep the repository free of temporary files and metadata files.
 Any AI tool working in this repository should follow these rules:
 
 - read the current repository structure before making assumptions
+- check `README.md`, `CGPA.md`, and relevant folder README files before editing academic documentation
 - do not reorganize folders unless the user explicitly asks
 - do not create extra README files unless asked
 - keep documentation changes consistent with the existing style
@@ -283,6 +448,19 @@ Any AI tool working in this repository should follow these rules:
 - prefer safe, minimal, clear changes
 
 If the user gives a direct formatting preference, follow the user's preference over older wording in the repository.
+
+## What AI Tools Should Not Do
+
+Avoid these actions unless the user clearly asks for them:
+
+- do not rename major folders
+- do not move course folders into semester folders
+- do not remove academic files
+- do not delete or rewrite user-provided faculty information
+- do not add unnecessary nested README files
+- do not add complex formatting that makes Markdown hard to maintain
+- do not mix unrelated topics in one commit
+- do not use vague commit messages
 
 ## Before Finishing Any Documentation Update
 
