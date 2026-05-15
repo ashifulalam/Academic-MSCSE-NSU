@@ -1,4 +1,4 @@
-# Contributing Notes for AI and Future Updates
+# Rules for AI and Future Updates
 
 This file explains how this repository should be maintained.
 
