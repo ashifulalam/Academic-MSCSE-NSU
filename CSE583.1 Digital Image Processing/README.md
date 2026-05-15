@@ -2,12 +2,17 @@
 
 This folder contains course materials for `CSE583.1 Digital Image Processing`.
 
-## Faculty
+## Course Info
 
-- `Faculty Name: Dr. Md. Aynal Haque (AyL)`
+- `Term: Spring 2026`
+- `Semester: 1st`
+- `Faculty: Dr. Md. Aynal Haque (AyL)`
+- `Office: SAC 923`
+
+## Contact
+
 - `Email: aynal@eee.buet.ac.bd`
 - `Email: aynal.haque@northsouth.edu`
-- `Office: SAC 923`
 
 ## Subdirectories
 

@@ -2,15 +2,18 @@
 
 This folder contains course materials for `CSE534.1 Software Quality Assurance`.
 
-## Faculty
+## Course Info
 
-- `Faculty Name: Dr. Safat Siddiqui (SSI)`
+- `Term: Spring 2026`
+- `Semester: 1st`
+- `Faculty: Dr. Safat Siddiqui (SSI)`
+- `Office: SAC 1022`
+
+## Contact
+
 - `Email: safat.siddiqui@northsouth.edu`
-- `Room: SAC 1022`
 
 ## Office Hours
-
-Please email in advance for an appointment.
 
 - `Thursday and Saturday: 11:30 am - 3:00 pm`
 - `Sunday and Tuesday: 12:00 pm - 1:00 pm`
