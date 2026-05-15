@@ -54,13 +54,15 @@ Decision options: `✅ Satisfied`, `🙂 Average`, `⚠️ Below Average`, `❌ 
 
 ### First Semester Courses
 
-| Course Name | Term | Letter Grade | Grade Point | Decision |
+| Course Name | Term | Decision | Letter Grade | Grade Point |
 | --- | --- | --- | --- | --- |
 | [CSE534.1 Software Quality Assurance](./CSE534.1%20Software%20Quality%20Assurance/) | Spring 2026 | `Pending` | `Pending` | `Pending` |
 | [CSE583.1 Digital Image Processing](./CSE583.1%20Digital%20Image%20Processing/) | Spring 2026 | `Pending` | `Pending` | `Pending` |
+| **Total CGPA** |  |  |  | `Pending` |
 
-### Second Semester Courses (Demo CGPA: 3.9)
+### Second Semester Courses
 
-| Course Name | Term | Letter Grade | Grade Point | Decision |
+| Course Name | Term | Decision | Letter Grade | Grade Point |
 | --- | --- | --- | --- | --- |
 | `Pending` | Summer 2026 | `Pending` | `Pending` | `Pending` |
+| **Total CGPA** |  |  |  | `Pending` |
