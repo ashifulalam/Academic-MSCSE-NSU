@@ -144,47 +144,82 @@ Follow these naming rules consistently:
 
 This repository uses simple, readable commits.
 
-### Commit Title Rules
+Future AI tools should follow the exact commit style below unless the user explicitly asks for a different style.
 
-- Use short and clear commit titles
-- Use normal, easy-to-understand language
-- Do not use difficult or overly formal words
-- Make the title specific enough that someone can understand the change from the commit list
+### Commit Title Format
+
+Use this pattern for commit titles:
+
+- `Add ...`
+- `Update ...`
+- `Rename ...`
+- `Remove ...`
+- `Clean ...`
+
+The title should:
+
+- start with a clear action word
+- be short and easy to understand
+- say exactly what changed
+- use normal words
+- avoid vague wording
 
 Good examples:
 
 - `Add books for CSE534`
+- `Add README for CSE583 course folder`
 - `Add lecture slides for CSE583`
 - `Update main README course table`
+- `Update course README layout`
+- `Rename README title`
 - `Add gitignore and clean temp files`
+- `Add AI workflow notes`
 
 Bad examples:
 
 - `Update files`
 - `Fix stuff`
 - `Misc changes`
+- `Changes`
+- `Small update`
 
-### Commit Detail Rules
+### Commit Body Format
 
-The commit body should:
+The commit body must follow these rules:
 
-- use bullet points
-- mention only the changes included in that commit
-- avoid unnecessary explanation
-- stay precise and simple
+- use bullet points only
+- each bullet should describe one actual change in that commit
+- mention only what is included in that commit
+- keep each bullet short and direct
+- use simple language
+- do not add background story or unnecessary explanation
 
-Good example:
+Use lowercase wording inside the bullet points unless a proper name needs capital letters.
+
+Good examples:
 
 - `add the main textbook for Digital Image Processing`
 - `add final, midterm, and math solution files for exam preparation`
+- `change the CSE534 README to use Course Info and Contact sections`
+- `define README layout rules for course folders`
+
+Bad examples:
+
+- `this commit improves many things in the repo`
+- `worked on several updates`
+- `made some changes to keep things better`
 
 ### Commit Scope Rules
 
 - Prefer one commit for one main topic
-- Keep related files together in the same commit
-- If a folder is being added, commit it in a clean sequence when possible
+- Do not mix unrelated changes in the same commit
+- Keep related files together only when they belong to the same clear topic
+- If a README change directly explains files added in the same topic, it can be committed together
+- If the change covers a different topic, use a separate commit
 
-Example folder-by-folder pattern:
+### Folder-by-Folder Commit Pattern
+
+When adding a course folder in a clean sequence, use this pattern when practical:
 
 1. top `README.md`
 2. course folder `README.md`
@@ -194,6 +229,18 @@ Example folder-by-folder pattern:
 6. `Project`
 7. `Exam`
 8. `Slides`
+
+Use the closest matching version of this pattern depending on the actual folder structure.
+
+### Commit Checklist
+
+Before making a commit, check:
+
+- is the commit about one clear topic?
+- does the title clearly say what changed?
+- does the body use only bullet points?
+- does the body mention only the files or documentation changed in this commit?
+- would someone understand the commit from the title and bullets alone?
 
 ## When to Update READMEs
 
