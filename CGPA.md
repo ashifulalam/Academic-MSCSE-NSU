@@ -1,6 +1,6 @@
 # CGPA
 
-**Current CGPA:** `—`  
+**Current CGPA:** `3.00`  
 **Total Credit:** `6`
 
 ## Grades
@@ -56,9 +56,9 @@ Decision options: `✅ Satisfied`, `🙂 Average`, `⚠️ Below Average`, `❌ 
 
 | Course Name | Term | Decision | Letter Grade | Grade Point |
 | --- | --- | --- | --- | --- |
-| [CSE534.1 Software Quality Assurance](./CSE534.1%20Software%20Quality%20Assurance/) | Spring 2026 | `Pending` | `Pending` | `Pending` |
-| [CSE583.1 Digital Image Processing](./CSE583.1%20Digital%20Image%20Processing/) | Spring 2026 | `Pending` | `Pending` | `Pending` |
-| **Total CGPA** |  |  |  | `Pending` |
+| [CSE534.1 Software Quality Assurance](./CSE534.1%20Software%20Quality%20Assurance/) | Spring 2026 | `Pending` | `B` | `3.0` |
+| [CSE583.1 Digital Image Processing](./CSE583.1%20Digital%20Image%20Processing/) | Spring 2026 | `Pending` | `B` | `3.0` |
+| **Total CGPA** |  |  |  | `3.00` |
 
 ### Second Semester
 

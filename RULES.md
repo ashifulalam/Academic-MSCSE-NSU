@@ -166,24 +166,45 @@ It should:
 - keep semester course tables under `Course Outcome`
 - use `Pending` until real grades are available
 - update `Letter Grade`, `Grade Point`, and `Decision` after results are published
+- update `Current CGPA`, semester `Total CGPA`, and `Total Credit` when official grades or credits change
 - calculate semester CGPA from the course grade points
+- keep all CGPA and grade-result tracking inside `CGPA.md`
 - keep the page simple enough to update every semester
+
+### CGPA Update Rules
+
+When official grades are published, update only `CGPA.md` with:
+
+- `Current CGPA`
+- `Total Credit`
+- course `Letter Grade`
+- course `Grade Point`
+- semester `Total CGPA`
+- course `Decision` only if the user gives a decision
+
+Do not add CGPA or grade-result details to:
+
+- root `README.md`
+- course folder README files
+- folder descriptions outside `CGPA.md`
 
 ### Course Outcome Rules
 
 Use this structure inside `Course Outcome`:
 
-- `First Semester Courses`
-- `Second Semester Courses`
+- `First Semester`
+- `Second Semester`
 - future semester sections when new semesters are added
 
 Each semester course table should include:
 
 - `Course Name`
 - `Term`
+- `Decision`
 - `Letter Grade`
 - `Grade Point`
-- `Decision`
+
+Each semester table should include a final `Total CGPA` row.
 
 Use the same decision labels unless the user asks for a change:
 
@@ -237,6 +258,13 @@ Inside `Course Info`, keep these fields:
 - Put email addresses inside `Contact`
 - Do not put email addresses inside `Course Info`
 - If a faculty member has more than one email, keep all important ones
+
+### Result and CGPA Rules
+
+- Keep CGPA and grade results only inside `CGPA.md`
+- Do not add `Result` sections to course folder README files
+- Do not add CGPA information to the root `README.md`
+- Course folder README files should stay focused on course info, contact details, office hours, and subdirectories
 
 ### Office Hours Rules
 
