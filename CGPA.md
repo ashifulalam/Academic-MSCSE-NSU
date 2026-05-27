@@ -64,5 +64,6 @@ Decision options: `✅ Satisfied`, `🙂 Average`, `⚠️ Below Average`, `❌ 
 
 | Course Name | Term | Decision | Letter Grade | Grade Point |
 | --- | --- | --- | --- | --- |
-| `Pending` | Summer 2026 | `Pending` | `Pending` | `Pending` |
+| `CSE511.1 Advanced Algorithms` | Summer 2026 | `Pending` | `Pending` | `Pending` |
+| `CSE565.1 Digital Signal Processing` | Summer 2026 | `Pending` | `Pending` | `Pending` |
 | **Total CGPA** |  |  |  | `Pending` |
