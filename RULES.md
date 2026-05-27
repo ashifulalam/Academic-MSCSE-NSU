@@ -70,7 +70,12 @@ The current first-semester course folders are:
 - `CSE534.1 Software Quality Assurance`
 - `CSE583.1 Digital Image Processing`
 
-Future semester course folders may be added later. When that happens, update the related index and tracking files instead of changing the whole structure.
+The current second-semester course folders are:
+
+- `CSE511.1 Advanced Algorithms`
+- `CSE565.1 Digital Signal Processing`
+
+Future semester course folders may be added later. When that happens, follow the new semester branch rules below.
 
 ## General Principles
 
@@ -97,9 +102,8 @@ Use root-level files this way:
 Top-level content should go into one of:
 
 - `Academic Calendar`
-- `CSE534.1 Software Quality Assurance`
-- `CSE583.1 Digital Image Processing`
-- `Qualifying Exam`
+- current semester course folders
+- other clearly named academic folders requested by the user
 
 Do not put course-specific books, slides, notes, papers, exams, or projects directly in the repository root.
 
@@ -115,9 +119,35 @@ Inside course folders, use the most relevant subfolder such as:
 
 If a new kind of material does not fit the existing structure, create a clearly named new subfolder only when necessary.
 
+## New Semester Branch Rules
+
+The user prefers a clean branch for each new semester when starting fresh.
+
+When creating a new semester branch:
+
+- create a semester checkpoint tag for the previous semester if the user asks
+- create a clean orphan branch for the new semester when the user wants a fresh view
+- keep only `RULES.md` and `.gitignore` at the start of the clean branch
+- make the new semester branch the GitHub default branch if the user asks
+- do not copy old semester folders into the new semester branch
+- keep the old semester files safe on the previous branch
+- add only the new semester course folders and current semester academic files
+
+For branch names, use simple semester names such as:
+
+- `second-semester`
+- `third-semester`
+- `fourth-semester`
+
+For semester tags, use simple checkpoint names such as:
+
+- `first-semester`
+- `second-semester`
+- `third-semester`
+
 ## Future Course and Semester Rules
 
-The user is currently in the first semester. More courses and semesters will be added later.
+The user is currently using a clean second-semester branch. More courses and semesters may be added later.
 
 When a new course is added:
 
@@ -129,10 +159,10 @@ When a new course is added:
 
 When a new semester is added:
 
-- add a new semester section in `CGPA.md`
-- keep previous semester sections unchanged unless the user asks
-- do not reorganize old courses into new semester folders unless the user explicitly asks
-- keep the root `README.md` simple and easy to scan
+- create a clean semester branch if the user wants a fresh working directory
+- keep previous semester branches unchanged unless the user asks
+- do not bring old semester folders into the new clean branch unless the user asks
+- keep the root `README.md` focused on the current semester
 
 ## README Rules
 
@@ -148,11 +178,72 @@ The root `README.md` is the main entry point for the repository.
 It should:
 
 - have a clean title
-- optionally have a short repository description if the user wants one
-- include the course index table
+- avoid extra description text unless the user asks for it
+- focus on the current semester branch
 - stay concise and easy to read
 
 If the root README is updated, keep the style simple and structured.
+
+### New Semester Root README Layout
+
+For a clean semester branch, use this root `README.md` layout:
+
+1. semester title
+2. `Grading Policy`
+3. one assessment table for each current semester course
+
+Do not include a course index table unless the user asks for it.
+
+Do not include a paragraph description under the title unless the user asks for it.
+
+### Grading Policy Rules
+
+Place `Grading Policy` near the top of the root `README.md`.
+
+Use this table format:
+
+- `Numerical Score`
+- `Letter Grade`
+- `Grade Points`
+
+Do not include `Performance Remarks` unless the user asks for it.
+
+Use these rows unless the user gives a different grading scale:
+
+- `93 and above | A | 4.0`
+- `90 - 92 | A- | 3.7`
+- `87 - 89 | B+ | 3.3`
+- `83 - 86 | B | 3.0`
+
+### Assessment Tracking Table Rules
+
+For each current semester course in the root `README.md`, create a separate table.
+
+Use the course name as the section title, for example:
+
+- `CSE511.1 Advanced Algorithms`
+- `CSE565.1 Digital Signal Processing`
+
+Each assessment table should include these columns:
+
+- `Assessment`
+- `Date`
+- `Marks`
+- `Lost Marks`
+
+Each assessment table should include these rows:
+
+- `Quiz 1`
+- `Quiz 2`
+- `Quiz 3`
+- `Mid`
+- `Final`
+- `Attendance`
+- `Total Lost Marks`
+
+Use `Pending` until the user provides real dates, marks, or lost marks.
+
+For `Total Lost Marks`, leave the empty cells blank and put `Pending` under the `Lost Marks` column.
 
 ## CGPA.md Rules
 
@@ -226,14 +317,20 @@ When a new semester starts, add a new semester section in `CGPA.md` only when th
 
 Only the main top-level folders should have their own `README.md`, unless the user explicitly asks for more nested README files.
 
-At the moment, these folders should have README files:
-
-- `Academic Calendar`
-- `CSE534.1 Software Quality Assurance`
-- `CSE583.1 Digital Image Processing`
-- `Qualifying Exam`
+Current semester course folders should have their own `README.md`.
 
 Do not automatically create README files inside every subfolder.
+
+Do not add `README.md` inside `Academic Calendar` unless the user explicitly asks for it.
+
+## Academic Calendar Rules
+
+Use `Academic Calendar` for semester calendar PDF files and related official calendar documents.
+
+- create the `Academic Calendar` folder when the user asks for it
+- keep calendar PDFs inside `Academic Calendar`
+- do not add a README inside `Academic Calendar` unless the user asks
+- keep the original calendar file name unless the user asks to rename it
 
 ## Standard Course README Layout
 
