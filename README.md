@@ -1,5 +1,14 @@
 # 🎓 NSU MScSE Second Semester
 
+## Grading Policy
+
+| Numerical Score | Letter Grade | Grade Points |
+| --- | --- | --- |
+| 93 and above | A | 4.0 |
+| 90 - 92 | A- | 3.7 |
+| 87 - 89 | B+ | 3.3 |
+| 83 - 86 | B | 3.0 |
+
 ## CSE511.1 Advanced Algorithms
 
 | Assessment | Date | Marks | Lost Marks |
@@ -23,12 +32,3 @@
 | Final | `Pending` | `Pending` | `Pending` |
 | Attendance | `Pending` | `Pending` | `Pending` |
 | **Total Lost Marks** |  |  | `Pending` |
-
-## Grading Policy
-
-| Numerical Score | Letter Grade | Grade Points | Performance Remarks |
-| --- | --- | --- | --- |
-| 93 and above | A | 4.0 | Excellent |
-| 90 - 92 | A- | 3.7 | Excellent |
-| 87 - 89 | B+ | 3.3 | Good |
-| 83 - 86 | B | 3.0 | Good |
