@@ -349,6 +349,7 @@ Inside `Course Info`, keep these fields:
 - `Semester`
 - `Faculty`
 - `Office`
+- `Class Room` when a classroom number is available
 
 ### Contact Rules
 
@@ -362,6 +363,12 @@ Inside `Course Info`, keep these fields:
 - Do not add `Result` sections to course folder README files
 - Do not add CGPA information to the root `README.md`
 - Course folder README files should stay focused on course info, contact details, office hours, and subdirectories
+
+### Classroom Rules
+
+- Use `Class Room` for the room where the class is held
+- Use `Office` only for the faculty office location
+- Do not put classroom numbers under `Office`
 
 ### Office Hours Rules
 

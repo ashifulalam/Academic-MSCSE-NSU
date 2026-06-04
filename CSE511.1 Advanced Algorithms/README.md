@@ -6,8 +6,13 @@ This folder contains course materials for `CSE511.1 Advanced Algorithms`.
 
 - `Term: Summer 2026`
 - `Semester: 2nd`
-- `Faculty: Pending`
+- `Faculty: ARA2`
 - `Office: Pending`
+- `Class Room: SAC201`
+
+## Schedule
+
+- `Friday: 09:00 AM - 12:00 PM`
 
 ## Subdirectories
 
