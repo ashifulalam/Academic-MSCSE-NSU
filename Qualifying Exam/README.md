@@ -13,4 +13,4 @@ This folder contains qualifying exam related documents.
 ## Contents
 
 - [Qualifying Exam Survey Spring 2026 copy.pdf](./Resources/Qualifying%20Exam%20Survey%20Spring%202026%20copy.pdf)
-- [Algorithms Syllabus Plan](./Algorithms%20Syllabus%20Plan.md)
+- [Algorithms Syllabus Plan](./Algorithms/Algorithms%20Syllabus%20Plan.md)
