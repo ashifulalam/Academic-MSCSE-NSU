@@ -11,15 +11,17 @@
 
 ## CSE511.1 Advanced Algorithms
 
-| Assessment | Date | Marks | Lost Marks |
-| --- | --- | --- | --- |
-| Quiz 1 | `Pending` | `Pending` | `Pending` |
-| Quiz 2 | `Pending` | `Pending` | `Pending` |
-| Quiz 3 | `Pending` | `Pending` | `Pending` |
-| Mid | `Pending` | `Pending` | `Pending` |
-| Final | `Pending` | `Pending` | `Pending` |
-| Attendance | `Pending` | `Pending` | `Pending` |
-| **Total Lost Marks** |  |  | `Pending` |
+| Assessment | Date | Total Marks | Marks | Lost Marks |
+| --- | --- | --- | --- | --- |
+| Class Participation (CP) | `Pending` | 5 | `Pending` | `Pending` |
+| Quiz 1 | `Pending` | 10 | `Pending` | `Pending` |
+| Quiz 2 | `Pending` | 10 | `Pending` | `Pending` |
+| Proposal Presentation + Viva | `Pending` | 10 | `Pending` | `Pending` |
+| Initial Paper | `Pending` | 10 | `Pending` | `Pending` |
+| Project Contributions | `Pending` | 25 | `Pending` | `Pending` |
+| Final Presentation + Viva | `Pending` | 15 | `Pending` | `Pending` |
+| Final Paper | `Pending` | 15 | `Pending` | `Pending` |
+| **Total Lost Marks** |  |  |  | `Pending` |
 
 ## CSE565.1 Digital Signal Processing
 
